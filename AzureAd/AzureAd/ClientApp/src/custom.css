@@ -1,0 +1,48 @@
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.gridContainer {
+    display: grid;
+    height: 200px;
+    width: 100%;
+    border: 1px solid black;
+    /*grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];*/
+    grid-template-columns: repeat(3, 20px [col-start]);
+    grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+}
+
+.testBox1 {
+    background-color: blue;
+    /*height: 100px;
+    width: 100px;*/
+
+    grid-column-start: col-start 2;
+    /*grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 3;*/
+
+    border: 1px solid red;
+}
+.testBox2 {
+    background-color: blue;
+    /*height: 100px;
+    width: 100px;*/
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 3;
+    /*grid-row-start: row1-start;
+    grid-row-end: 3;*/
+
+    border: 1px solid yellow;
+}
